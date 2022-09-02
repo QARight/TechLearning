@@ -1,7 +1,7 @@
 package com.qingniu.techlearning
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.qingniu.techlearning.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.gotoViewModelTv.setOnClickListener {
             this.startActivity(ViewModelActivity.getCallIntent(this))
+        }
+
+        binding.gotoCoroutineTv.setOnClickListener {
+            this.startActivity(CoroutineActivity.getCallIntent(this))
         }
     }
 }

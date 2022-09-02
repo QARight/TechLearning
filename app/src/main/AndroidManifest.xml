@@ -25,6 +25,8 @@
         </activity>
 
         <activity android:name=".ViewModelActivity"/>
+
+        <activity android:name=".CoroutineActivity"/>
     </application>
 
 </manifest>
